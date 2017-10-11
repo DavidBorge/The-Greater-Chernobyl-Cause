@@ -825,6 +825,16 @@
 				margin-bottom: 10px;
 			}
 			
+			/**** Images ****/
+			.article-image {
+				/*Center horizontally*/
+				display: block;
+    		margin: 0 auto;
+				height: auto;
+				
+				/*Espace before and after*/
+				margin-bottom: 25px;
+			}
 			
 			/**** Materialize CSS (compressed and purified) ****/
 			/*-Add at the end-*/

@@ -5125,7 +5125,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav {
   margin: 0;
-  height: 100%;
+  height: auto;
   background-color: #fff; }
   .side-nav.right-aligned {
     right: 0;
@@ -5145,8 +5145,7 @@ input[type=range]:focus::-ms-fill-upper {
     font-size: 14px;
     font-weight: 500;
     height: 48px;
-    line-height: 48px;
-    padding: 0 32px; }
+    line-height: 48px; }
     .side-nav li > a:hover {
       background-color: rgba(0, 0, 0, 0.05); }
     .side-nav li > a.btn, .side-nav li > a.btn-large, .side-nav li > a.btn-large, .side-nav li > a.btn-flat, .side-nav li > a.btn-floating {
@@ -5231,7 +5230,7 @@ input[type=range]:focus::-ms-fill-upper {
     .side-nav.fixed.right-aligned {
       transform: translateX(105%); }
   .side-nav a {
-    padding: 0 16px; }
+    padding: 0 0 0 16px; }
   .side-nav .userView {
     padding: 16px 16px 0; } }
 .side-nav .collapsible-body > ul:not(.collapsible) > li.active,

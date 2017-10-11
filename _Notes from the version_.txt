@@ -1,4 +1,6 @@
-	— THE GREATER CHERNOBYL CAUSE V3.2 —
+	— THE GREATER CHERNOBYL CAUSE V3.3 —
 
-This version added the Fundraising and Volunteering tabs in the How You Can Help section, as well as the Governance section.
-The Nationwide Plea for Help button has been removed.
+This version just has minor CSS changes for the footer.
+Also, the clean and minified CSS. (No longer Materialize CSS linked).
+
+This is the first version I uploaded to the CMS.

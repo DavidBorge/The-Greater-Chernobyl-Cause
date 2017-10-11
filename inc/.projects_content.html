@@ -1,0 +1,154 @@
+<div id="content_left">
+  <div id="content_area">
+
+    {if segment_1 == "projects" && segment_2 ==""}
+      <div id="s3slider">
+         <ul id="s3sliderContent" class="projects">
+            <li class="s3sliderImage">
+              <img src="/images/slideshow/Projects_Landing_01.jpg" />
+              <span class="bottom"></span>
+            </li>
+           <li class="s3sliderImage">
+              <img src="/images/slideshow/Projects_Landing_02.jpg" />
+              <span class="bottom"></span>
+            </li>
+            <li class="s3sliderImage">
+              <img src="/images/slideshow/Projects_Landing_03.jpg" />
+              <span class="bottom"></span>
+            </li>
+            <li class="s3sliderImage">
+              <img src="/images/slideshow/Projects_Landing_04.jpg" />
+              <span class="bottom"></span>
+            </li>
+            <li class="s3sliderImage">
+              <img src="/images/slideshow/Projects_Landing_05.jpg" />
+              <span class="bottom"></span>
+            </li>
+            <li class="s3sliderImage">
+              <img src="/images/slideshow/Projects_Landing_06.jpg" />
+              <span class="bottom"></span>
+            </li>
+            <div class="clear s3sliderImage"></div>
+         </ul>
+      </div>
+    {/if}
+
+    {if segment_1 == "projects" && segment_2 =="kazakhstan"}
+      <div id="s3slider">
+        <ul id="s3sliderContent" class="projects">
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Kazakhstan_01.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Kazakhstan_02.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Kazakhstan_03.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Kazakhstan_04.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Kazakhstan_05.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Kazakhstan_06.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <div class="clear s3sliderImage"></div>
+        </ul>
+      </div> 
+    {/if}
+
+    {if segment_1 == "projects" && segment_2 =="ukraine"}
+      <div id="s3slider">
+        <ul id="s3sliderContent" class="projects">
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Ukraine_01.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Ukraine_02.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Ukraine_03.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Ukraine_04.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Ukraine_05.jpg" />
+            <span class="bottom"></span>
+          </li>
+          
+          <div class="clear s3sliderImage"></div>
+        </ul>
+      </div> 
+    {/if}
+
+    {if segment_1 == "projects" && segment_2 =="russia"}
+      <div id="s3slider">
+        <ul id="s3sliderContent" class="projects">
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Russia_01.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Russia_02.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Russia_03.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Russia_04.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Russia_05.jpg" />
+            <span class="bottom"></span>
+          </li>
+          <li class="s3sliderImage">
+            <img src="/images/slideshow/Projects_Russia_06.jpg" />
+            <span class="bottom"></span>
+          </li>
+          
+          <div class="clear s3sliderImage"></div>
+         </ul>
+      </div> 
+    {/if}
+
+    {!--
+      {if segment_1=="projects" && segment_2 !="ukraine" && segment_2 !="kazakhstan" && segment_2 !="russia" && segment_2 !=""}
+        <div class="header_content"><img src="/images/header.jpg" /></div>
+      {/if}
+    --}
+
+    {if segment_1 == 'projects' && segment_2 == ''}
+      {exp:channel:entries channel="text_pages" entry_id="2"}
+        <h3>{title}</h3>
+        <h4>{introduction}</h4>
+        <p>{body}</p>
+      {/exp:channel:entries}
+    {/if}
+
+    {if segment_2 != ''}
+      {exp:channel:entries channel="projects" url_title='{segment_2}'}
+        <h3>{title}</h3>
+        <h4>{introduction}</h4>
+        <p>{body}</p>
+      {/exp:channel:entries}
+    {/if}
+
+  </div>
+</div>
+{!-- </div> --}

@@ -1,0 +1,63 @@
+<div id="content_left">
+  <div id="content_area">
+
+    <div class="header_content">
+      <img src="/images/header.jpg" />
+    </div>
+
+    <h3>News Archive</h3>
+
+    <p><b>The Greater Chernobyl Cause and its work has featured prominently in both regional, national and international publications over recent years. </b></p>
+
+    {if segment_1 == "news" && segment_2 ==""}
+      {exp:channel:entries channel="news"}
+        <div class="news_item">
+          <div class="news_heading">
+            <div id="news_date">{entry_date format='%d/%m/%y'}</div>
+            {title}
+          </div>
+          <h4>{introduction}</h4>
+          <p>{body}</p>
+        </div>
+      {/exp:channel:entries}
+    {/if}
+
+    {if segment_1 == "news" && segment_2 !=""}
+      {exp:channel:entries channel="news" url_title="{segment_2}"}
+        <div class="news_item">
+          <div class="news_heading">
+            <div id="news_date">{entry_date format='%d/%m/%y'}</div>
+            {title}
+          </div>
+          <h4>{introduction}</h4>
+          <p>{body}</p>
+        </div>
+      {/exp:channel:entries}
+    {/if}
+
+    {if segment_1 == "news" && segment_2 =="current_news"}
+      {exp:channel:entries channel="news" limit="4"}
+        <div class="news_item">
+          <div class="news_heading">
+            <div id="news_date">{entry_date format='%d/%m/%y'}</div>
+            {title}
+          </div>
+          <h4>{introduction}</h4>
+          <p>{body}</p>
+        </div>
+      {/exp:channel:entries}
+    {/if}
+
+    {if segment_1 == "news" && segment_2 =="news_archive"}
+      <br/>
+      {exp:channel:entries channel="news"}
+        <a href="/index.php/news/{url_title}">
+          <div class="archive_heading">
+            <div id="news_date">{entry_date format='%d/%m/%y'}</div>
+            {title}
+          </div>
+        </a>
+      {/exp:channel:entries}
+    {/if} </div>
+  </div>
+</div>

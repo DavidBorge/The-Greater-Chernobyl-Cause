@@ -1,0 +1,525 @@
+<!doctype html>
+<html amp lang="en">
+	<head>
+		<meta charset="utf-8">
+    
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-vimeo" src="https://cdn.ampproject.org/v0/amp-vimeo-0.1.js"></script>
+	<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    
+    <title>About Us - The Greater Chernobyl Cause</title>
+    
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+		
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="_css_/materialize.css">
+    
+    <style amp-custom>
+			/*****---- STYLES SHARED BY ALL PAGES ----****/
+
+			/**** Min-width of the page ****/
+			/*Check at the end*/
+			
+			/**** Typography (in general) ****/
+			* {
+				font-family: 'Roboto', sans-serif;
+			}
+			
+			.text-center-h {
+				text-align: center;
+			}
+			
+			.text-justify {
+				text-align: justify;
+			}
+			
+			.text-italic {
+				font-style: italic;
+			}
+			
+			/**** Nav bar ****/
+			@media only screen and (min-width: 1240px) {
+				/*Cancel the nav-extended class for the <nav> (I use the #id because it has more priority)*/
+				#nav {
+					height: auto;
+				}
+			}
+			
+			/**** Hamburguer menu (amp-sidebar) ****/
+			#menu {
+				cursor: pointer;
+				cursor: hand;
+			}
+
+			/*.side-nav materialize class has been edited*/
+			
+			/**** Logo ****/
+			#logo {
+				/*Avoid losing resolution*/
+				max-width: 565px;
+			}
+			
+			/*Center vertically (with Flexbox) (apply to the container)*/
+			.center-logo-v {
+				display: -webkit-flex;
+    			display: flex;
+				
+				-webkit-align-items: center;
+    			align-items: center;
+				
+				width:100%;
+			}
+			
+			/*Center horizontally (apply to the element itself)*/
+			.center-logo-h {
+				display: block;
+    			margin: 0 auto;
+				
+				width:565px;
+				height: auto;
+			}
+			
+			/**** Section: eliminate the padding-top in the About Us page to keep the tabs touching with the navigation bar*/
+			.section {
+				padding-top: 3px;
+			}
+			
+			/**** Button: text in several lines ****/
+			.several-lines {
+				height: auto;
+				min-height: 20px;
+				line-height: 20px;
+				padding-top: 8px;
+				padding-bottom: 8px;
+				width: 150px;
+			}
+			
+			/**** DONATE NOW Button ****/
+			.bolder {
+				font-weight: bolder;
+			}
+			
+			/**** LINKS: External Links in the main section: add an indicative icon at the end ****/
+			main a[target="_blank"]:not(.social-media-icon-shadow, .no-external-link-icon):after {
+    			content: url(icons/external-link-black.png);
+			}
+
+			.no-external-link-icon {
+
+			}
+
+			.card-title:hover {
+				text-decoration: underline;
+			}
+
+			/**** Footer ****/
+			/*Sticky Footer*/
+			body {
+				display: flex;
+				min-height: 100vh;
+				flex-direction: column;
+			}
+
+			main {
+				flex: 1 0 auto;
+			}
+			
+			/*Responsive Contact Info*/
+			.flex-container-contacts {
+				display: -webkit-flex;
+				display: flex;
+
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+			
+			.flex-item-contact {
+				flex: 1;
+
+				/*Prevent the two contacts touching*/
+				margin: 0 10px 0 10px;
+
+				/*Prevent the text being in a different line of the icon*/
+				min-width: 265px;
+			}
+			
+			/*White text*/
+			footer * {
+				color: #FFFFFF;
+			}
+			
+			/*Underline links on hover*/
+			footer a:hover {
+				text-decoration: underline;
+			}
+			
+			/*Size of Fax icon (which is missing in Google Icons)*/
+			.fax-icon {
+				width: 14px;
+				height: 14px;
+			}
+			
+			/*Vertically align text with icon*/
+			footer * {
+				vertical-align: middle;
+			}
+
+			/*Social Media icons: horizontal alignment*/
+			.flex-container-social-media {
+				display: -webkit-flex;
+				display: flex;
+
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+
+				margin-top: 10px;
+
+				max-width: 280px;
+			}
+
+			/*Social media icons: shadow on hover*/
+			.social-media-icon-shadow:hover {
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
+			/*External Links in the footer: add an indicative icon at the end (except the ones that are images of social media)*/
+			footer a[target="_blank"]:not(.social-media-icon-shadow):after {
+    			content: url(icons/external-link-white.png);
+			}
+			
+			/*****---- STYLES OF THE MAIN CONTENT OF PROJECTS.HTML ----****/
+			
+			/**** AMP Tabs ****/
+			.amp-tab-container {
+				display: -webkit-flex;
+				display: flex;
+
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+			
+			.tab-button {
+				list-style: none;
+				flex-grow: 1;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.tab-button[selected] {
+				outline: none;
+			}
+			
+			.tab-button[selected]+.tabContent {
+				display: block;
+			}
+			
+			.tabContent {
+				display: none;
+				width: 100%;
+				order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+				padding-top: 10px;
+			}
+			
+			amp-selector [option][selected] {
+				/*Text*/
+				color: rgba(183,28,28,1);
+				
+				/*Underline when tab is selected*/
+				border-bottom: 2px solid rgba(183,28,28,1);
+				outline: 0;  /*Over-write the amp-selector original CSS*/
+				/*outline: 5px solid rgba(0,0,0,.7);*/  /*Original code*/
+			}
+
+			amp-selector [option]:active {
+				/*Change nothing when the tab is being clicked*/
+				outline: 0;  /*Over-write the amp-selector original CSS*/
+				/*outline: 5px solid rgba(0,0,0,.7);*/  /*Original code*/
+			}
+			
+			.tab:hover {
+				color: rgba(183,28,28,1);
+			}
+			
+			/**** Image ****/
+			.image-center {
+				/*Avoid the arrows being out of the photos*/
+				max-width: 590px;
+				
+				/*Center horizontally*/
+				display: block;
+				margin: 0 auto;
+				height: auto;
+			}
+				
+			/**** Cards with the individual projects****/
+			.project-card {
+				padding: 10px;
+				border-radius: 0 0 2px 2px;
+			}
+
+			.shadow {
+				/*Shadow*/
+				box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+			}
+			
+			.project-title {
+				border-bottom: 1px solid rgba(160,160,160,0.2);
+				color: #B71C1C;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+			}
+			
+			/**** Videos with 4:3 aspect ratio ****/
+			.video-4x3 {
+				/*Avoid losing resolution*/
+				max-width: 640px;
+				
+				/*Center horizontally*/
+				margin-right: auto;
+				margin-left: auto;
+			}
+			
+			.last-paragraph {
+				margin-bottom: 0;
+			}
+			
+			/**** Materialize CSS (compressed and purified) ****/
+			/*-Add at the end-*/
+		</style>
+  </head>
+  
+	<body>
+		<!-- Navigation Bar -->
+		<nav id="nav" class="red darken-4" role="navigation">
+			<div class="nav-wrapper container">
+					
+				<!-- Logo: The Greater Chernobyl Cause -->
+				<div class="center-logo-v">
+					<div>
+						<a id="menu" on="tap:sidebar.toggle" class="button-collapse"><i class="material-icons">menu</i></a>
+					</div>
+					<div class="center-logo-h">
+						<a href="index.html">
+							<amp-img id="logo" src="./img/logo.png" width="565" height="57" layout="responsive" alt="The Greater Chernobyl Cause"></amp-img>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Links of the Navigation Bars -->
+			<div class="nav-wrapper container">
+				<ul class="left hide-on-med-and-down">
+					<li>
+						<a class="waves-effect waves-light btn-large yellow darken-3 bolder z-depth-5 several-lines">  <!-- alternative: pulse  -->
+							<amp-fit-text width="130" height="40" layout="responsive" max-font-size="20">D O N A T E<br>N O W</amp-fit-text>
+						</a>
+					</li>
+					<li><a class="waves-effect waves-light btn-large yellow darken-3 several-lines shadow-on-hover">Nationwide Plea For Help</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li class="active"><a href="projects.html">Projects</a></li>
+					<li><a href="how-you-can-help.html">How You Can Help</a></li>
+					<li><a href="in-the-news.html">In The News</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		
+		<!-- AMP Sidebar -->
+		<amp-sidebar id="sidebar" layout="nodisplay" side="left">
+			<ul class="side-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="how-you-can-help.html">How You Can Help</a></li>
+				<li><a href="in-the-news.html">In The News</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</amp-sidebar>
+
+		
+		<main>
+			<div class="container">
+				<div class="section">
+					
+					<!-- MAIN CONTENT -->
+					
+					<!-- Tabs -->
+					<amp-selector role="tablist" layout="container" class="amp-tab-container tabs">
+						
+						<div role="tab" class="tab-button tab" selected option="a">Kazakhstan</div>
+						<div role="tabpanel" class="tabContent">
+							<!-- TAB "Kazakhstan" CONTENT -->
+							
+							<amp-carousel width="590" height="265" layout="responsive" type="slides" delay="6000" autoplay class="image-center">
+								<amp-img src="./img/projects/kazakhstan/carousel-1.jpg" width="590" height="265"></amp-img>
+								<amp-img src="./img/projects/kazakhstan/carousel-2.jpg" width="590" height="265"></amp-img>
+								<amp-img src="./img/projects/kazakhstan/carousel-3.jpg" width="590" height="265"></amp-img>
+								<amp-img src="./img/projects/kazakhstan/carousel-4.jpg" width="590" height="265"></amp-img>
+								<amp-img src="./img/projects/kazakhstan/carousel-5.jpg" width="590" height="265"></amp-img>
+								<amp-img src="./img/projects/kazakhstan/carousel-6.jpg" width="590" height="265"></amp-img>
+							</amp-carousel>
+							
+							<p class="flow-text bolder text-center-h">
+								Kazakhstan was part of the old Soviet Union. It lies in Central Asia, four thousand miles from Ireland and the country is as large as the whole of Western Europe. It shares a border with Russia in the North, stretches to the Caspian Sea in the west and to China and Mongolia in the east.
+							</p>
+							
+							<div class="project-card shadow">
+								<div class="project-title flow-text bolder text-center-h">
+									Semipalatinsk Hospice Kazakhstan
+								</div>
+								<amp-vimeo data-videoid="17743031" width="640" height="480" layout="responsive" class="video-4x3"></amp-vimeo>
+								<p class="flow-text text-justify">In the autumn of 2008 Fiona Corcoran from the Irish charity The Greater Chernobyl Cause first visited this hospice for the elderly in Semipalatinsk, an industrial city in north east Kazakhstan.</p>
+								<p class="flow-text text-justify">She was so shocked by the desperate plight of the residents and the squalor inside the dilapidated building that she decided to act immediately.</p>
+								<p class="flow-text text-justify">Now, two years on and thanks to generous donations and the charity's hard work, there have been some major improvements to diet, medical care and hygiene.</p>
+								<p class="flow-text text-justify">But best of all is the charity's plan to build an entirely new hospice in the grounds of the city's general hospital.</p>
+								<p class="flow-text text-justify">This hospital though has problems of its own. One of the most urgent is the repair of the CAT scanner, out of action since June 2010. It would normally be used by 1500 cases a year, 500 of them very serious.</p>
+								<p class="last-paragraph flow-text text-justify">The Greater Chernobyl Cause wants to help get this scanner working again by supplying vital components.</p>
+							</div>
+							
+							
+							
+						</div>
+						
+						<div role="tab" class="tab-button tab" option="b">Ukraine</div>
+						<div role="tabpanel" class="tabContent">
+							<!-- TAB "Ukraine" CONTENT -->
+
+							
+							
+						</div>
+						
+						<div role="tab" class="tab-button tab" option="c">Russia</div>
+						<div role="tabpanel" class="tabContent">
+							<!-- TAB "Russia" CONTENT -->
+
+							
+							
+							
+						</div>
+						
+					</amp-selector>
+					
+					<!-- END OF MAIN CONTENT -->
+					
+				</div>
+			</div>
+		</main>
+	
+		
+		<footer class="page-footer red darken-3">
+		
+			<div class="container">
+				<div class="text-center-h">
+					<h5>THE GREATER CHERNOBYL CAUSE</h5>
+					
+					<p><a href="http://www.charitiesregulatoryauthority.ie/en/CRA/Charity/EFCAC86E349DB5028025800B003B2946" target="_blank">REGISTERED CHARITY 15314</a></p>
+				</div>
+				
+				<div class="flex-container-contacts">
+					<div class="flex-item-contact">
+						<h5>Contact the Charity</h5>
+						<ul>
+							<li>
+								<i class="material-icons tiny">phone</i>
+								<b> Phone: </b>
+								<a href="tel: +353 (021) 432 3276">+353 (021) 432 3276</a>
+							</li>
+							<li>
+								<amp-img src="icons/fax.png" width="14" height="14" alt=""></amp-img>
+								<b> Fax: </b>
+								<a href="+353 (021) 453 6792">+353 (021) 453 6792</a>
+							</li>
+							<li>
+								<i class="material-icons tiny">email</i>
+								<b> Email: </b>
+								<a href="mailto: info@greaterchernobylcause.ie">info@greaterchernobylcause.ie</a>
+							</li>
+							<li class="flex-container-social-media">
+								<a href="https://www.facebook.com/greaterchernobylcause.ie/" target="_blank" class="social-media-icon-shadow">
+									<amp-img src="icons/facebook.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="https://twitter.com/ChernobylCause" target="_blank" class="social-media-icon-shadow">
+									<amp-img src="icons/twitter.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="#!" class="social-media-icon-shadow" target="_blank">
+									<amp-img src="icons/instagram.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="#!" class="social-media-icon-shadow" target="_blank">
+									<amp-img src="icons/linkedin.png" width="60" height="60" alt=""></amp-img>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="flex-item-contact">
+						<h5>Contact Fiona Corcoran, CEO/Founder</h5>
+						<ul>
+							<li>
+								<i class="material-icons tiny">phone</i>
+								<b> Phone: </b>
+								<a href="tel: +353 (087) 953 6133">+353 (087) 953 6133</a>
+							</li>
+							<li>
+								<i class="material-icons tiny">email</i>
+								<b> Email: </b>
+								<a href="mailto: corcoranfiona@eircom.net">corcoranfiona@eircom.net</a>
+							</li>
+							<li class="flex-container-social-media">
+								<a href="https://www.facebook.com/fiona.corcoran.184" target="_blank" class="social-media-icon-shadow">
+									<amp-img src="icons/facebook.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="https://twitter.com/CorcoranFiona" target="_blank" class="social-media-icon-shadow">
+									<amp-img src="icons/twitter.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="#!" class="social-media-icon-shadow" target="_blank">
+									<amp-img src="icons/instagram.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="https://www.linkedin.com/in/fiona-corcoran-5319ba10/?ppe=1" class="social-media-icon-shadow" target="_blank">
+									<amp-img src="icons/linkedin.png" width="60" height="60" alt=""></amp-img>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="text-center-h">
+					<h5><i class="material-icons">location_on</i>Location</h5>
+					
+					<p><a href="https://www.google.ie/maps?q=the+greater+chernobyl+cause&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiN8MeducLTAhVKJcAKHeDmBikQ_AUICygE" target="_blank">
+						Unit 4, Southside Industrial Estate, Pouladuff Road, Togher, Cork, T12 AW08, Ireland
+					</a></p>
+				</div>
+				
+			</div>
+			
+			<div class="footer-copyright">
+				<div class="container">
+					<p class="flow-text text-center-h text-italic">
+						Every child deserves a childhood, every adult a healthy life.
+					</p>
+				</div>
+			</div>
+			
+		</footer>
+  	</body>
+</html>

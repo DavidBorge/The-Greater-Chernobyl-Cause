@@ -1,0 +1,753 @@
+<!doctype html>
+<html amp lang="en">
+	<head>
+		<meta charset="utf-8">
+    
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-vimeo" src="https://cdn.ampproject.org/v0/amp-vimeo-0.1.js"></script>
+	<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    
+    <title>About Us - The Greater Chernobyl Cause</title>
+    
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+		
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="_css_/materialize.css">
+    
+    <style amp-custom>
+			/*****---- STYLES SHARED BY ALL PAGES ----****/
+
+			/**** Min-width of the page ****/
+			/*Check at the end*/
+			
+			/**** Typography (in general) ****/
+			* {
+				font-family: 'Roboto', sans-serif;
+			}
+			
+			.text-center-h {
+				text-align: center;
+			}
+			
+			.text-justify {
+				text-align: justify;
+			}
+			
+			.text-italic {
+				font-style: italic;
+			}
+			
+			/**** Nav bar ****/
+			@media only screen and (min-width: 1240px) {
+				/*Cancel the nav-extended class for the <nav> (I use the #id because it has more priority)*/
+				#nav {
+					height: auto;
+				}
+			}
+			
+			/**** Hamburguer menu (amp-sidebar) ****/
+			#menu {
+				cursor: pointer;
+				cursor: hand;
+			}
+
+			/*.side-nav materialize class has been edited*/
+			
+			/**** Logo ****/
+			#logo {
+				/*Avoid losing resolution*/
+				max-width: 565px;
+			}
+			
+			/*Center vertically (with Flexbox) (apply to the container)*/
+			.center-logo-v {
+				display: -webkit-flex;
+    			display: flex;
+				
+				-webkit-align-items: center;
+    			align-items: center;
+				
+				width:100%;
+			}
+			
+			/*Center horizontally (apply to the element itself)*/
+			.center-logo-h {
+				display: block;
+    			margin: 0 auto;
+				
+				width:565px;
+				height: auto;
+			}
+			
+			/**** Section: eliminate the padding-top in the About Us page to keep the tabs touching with the navigation bar*/
+			.section {
+				padding-top: 3px;
+			}
+			
+			/**** Button: text in several lines ****/
+			.several-lines {
+				height: auto;
+				min-height: 20px;
+				line-height: 20px;
+				padding-top: 8px;
+				padding-bottom: 8px;
+				width: 150px;
+			}
+			
+			/**** DONATE NOW Button ****/
+			.bolder {
+				font-weight: bolder;
+			}
+			
+			/**** LINKS: External Links in the main section: add an indicative icon at the end ****/
+			main a[target="_blank"]:not(.social-media-icon-shadow, .no-external-link-icon):after {
+    			content: url(icons/external-link-black.png);
+			}
+
+			.no-external-link-icon {
+
+			}
+
+			.card-title:hover {
+				text-decoration: underline;
+			}
+
+			/**** Footer ****/
+			/*Sticky Footer*/
+			body {
+				display: flex;
+				min-height: 100vh;
+				flex-direction: column;
+			}
+
+			main {
+				flex: 1 0 auto;
+			}
+			
+			/*Responsive Contact Info*/
+			.flex-container-contacts {
+				display: -webkit-flex;
+				display: flex;
+
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+			
+			.flex-item-contact {
+				flex: 1;
+
+				/*Prevent the two contacts touching*/
+				margin: 0 10px 0 10px;
+
+				/*Prevent the text being in a different line of the icon*/
+				min-width: 260px;
+			}
+			
+			/*White text*/
+			footer * {
+				color: #FFFFFF;
+			}
+			
+			/*Underline links on hover*/
+			footer a:hover {
+				text-decoration: underline;
+			}
+			
+			/*Size of Fax icon (which is missing in Google Icons)*/
+			.fax-icon {
+				width: 14px;
+				height: 14px;
+			}
+			
+			/*Vertically align text with icon*/
+			footer * {
+				vertical-align: middle;
+			}
+
+			/*Social Media icons: horizontal alignment*/
+			.flex-container-social-media {
+				display: -webkit-flex;
+				display: flex;
+
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+
+				margin-top: 10px;
+
+				max-width: 280px;
+			}
+
+			/*Social media icons: shadow on hover*/
+			.social-media-icon-shadow:hover {
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
+			/*External Links in the footer: add an indicative icon at the end (except the ones that are images of social media)*/
+			footer a[target="_blank"]:not(.social-media-icon-shadow):after {
+    			content: url(icons/external-link-white.png);
+			}
+			
+			/*****---- STYLES OF THE MAIN CONTENT OF ABOUT-US.HTML ----****/
+			
+			/**** AMP Tabs ****/
+			.amp-tab-container {
+				display: -webkit-flex;
+				display: flex;
+
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+			
+			.tab-button {
+				list-style: none;
+				flex-grow: 1;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.tab-button[selected] {
+				outline: none;
+			}
+			
+			.tab-button[selected]+.tabContent {
+				display: block;
+			}
+			
+			.tabContent {
+				display: none;
+				width: 100%;
+				order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+				padding-top: 10px;
+			}
+			
+			amp-selector [option][selected] {
+				/*Text*/
+				color: rgba(183,28,28,1);
+				
+				/*Underline when tab is selected*/
+				border-bottom: 2px solid rgba(183,28,28,1);
+				outline: 0;  /*Over-write the amp-selector original CSS*/
+				/*outline: 5px solid rgba(0,0,0,.7);*/  /*Original code*/
+			}
+
+			amp-selector [option]:active {
+				/*Change nothing when the tab is being clicked*/
+				outline: 0;  /*Over-write the amp-selector original CSS*/
+				/*outline: 5px solid rgba(0,0,0,.7);*/  /*Original code*/
+			}
+			
+			.tab:hover {
+				color: rgba(183,28,28,1);
+			}
+			
+			/**** Image ****/
+			.image-center {
+				/*Avoid the arrows being out of the photos*/
+				max-width: 625px;
+				
+				/*Center horizontally*/
+				display: block;
+				margin: 0 auto;
+				height: auto;
+			}
+			
+			/**** Title ****/
+			.title-of-page {
+				font-weight: 900;
+				margin-bottom: 10px;
+			}
+			
+			/**** Videos with 4:3 aspect ratio ****/
+			.video-4x3 {
+				/*Avoid losing resolution*/
+				max-width: 640px;
+				
+				/*Center horizontally*/
+				margin-right: auto;
+				margin-left: auto;
+			}
+			
+			/**** Four elements in "What We Do" Tab ****/
+			.space-around {
+				display: -webkit-flex;
+				display: flex;
+				
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				
+				-webkit-justify-content: space-around;
+				justify-content: space-around;
+			}
+			
+			.flex-item-cards {
+				flex: 1;
+
+				/*Prevent the text touching*/
+				margin: 10px 20px 10px 20px;
+
+				/*Prevent the text being to narrow or too wide*/
+				min-width: 300px;
+			}
+			
+			/*Prevent overflowing on mobile*/
+			@media only screen and (max-width: 340px) {
+				.flex-item-cards {
+					width: 100%;
+					min-width: 250px;
+					margin: 10px 0 10px 0;
+				}
+			}
+			
+			/**** "Partners" Cards ****/
+			.partner-content {
+				padding: 24px;
+				border-radius: 0 0 2px 2px;
+			}
+
+			.shadow {
+				/*Shadow*/
+				box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+			}
+			
+			/*Remove margins on the sides when the cards are in one column*/
+			@media only screen and (max-width: 705px) {
+				.flex-item-cards {
+					margin: 10px 0 10px 0;
+				}
+			}
+
+			
+			/**** Materialize CSS (compressed and purified) ****/
+			/*-Add at the end-*/
+		</style>
+  </head>
+  
+	<body>
+		<!-- Navigation Bar -->
+		<nav id="nav" class="red darken-4" role="navigation">
+			<div class="nav-wrapper container">
+					
+				<!-- Logo: The Greater Chernobyl Cause -->
+				<div class="center-logo-v">
+					<div>
+						<a id="menu" on="tap:sidebar.toggle" class="button-collapse"><i class="material-icons">menu</i></a>
+					</div>
+					<div class="center-logo-h">
+						<a href="index.html">
+							<amp-img id="logo" src="./img/logo.png" width="565" height="57" layout="responsive" alt="The Greater Chernobyl Cause"></amp-img>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Links of the Navigation Bars -->
+			<div class="nav-wrapper container">
+				<ul class="left hide-on-med-and-down">
+					<li>
+						<a class="waves-effect waves-light btn-large yellow darken-3 bolder z-depth-5 several-lines">  <!-- alternative: pulse  -->
+							<amp-fit-text width="130" height="40" layout="responsive" max-font-size="20">D O N A T E<br>N O W</amp-fit-text>
+						</a>
+					</li>
+					<li><a class="waves-effect waves-light btn-large yellow darken-3 several-lines shadow-on-hover">Nationwide Plea For Help</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="about-us.html">About Us</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="how-you-can-help.html">How You Can Help</a></li>
+					<li><a href="in-the-news.html">In The News</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		
+		<!-- AMP Sidebar -->
+		<amp-sidebar id="sidebar" layout="nodisplay" side="left">
+			<ul class="side-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="how-you-can-help.html">How You Can Help</a></li>
+				<li><a href="in-the-news.html">In The News</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</amp-sidebar>
+
+		
+		<main>
+			<div class="container">
+				<div class="section">
+					
+					<!-- MAIN CONTENT -->
+					
+					<!-- Tabs -->
+					<amp-selector role="tablist" layout="container" class="amp-tab-container tabs">
+						
+						<div role="tab" class="tab-button tab flo" selected option="a">Who We Are</div>
+						<div role="tabpanel" class="tabContent">
+							<!-- TAB "Who We Are" CONTENT -->
+							
+							<amp-img src="./img/about-us/who-we-are.jpg" width="590" height="265" layout="responsive" class="image-center"></amp-img>
+
+							<p class="flow-text bolder text-center-h">
+								The Greater Chernobyl Cause is based in Cork, Ireland.
+							</p>
+
+							<p class="flow-text text-justify">
+								The charity's head, <b>Fiona Corcoran</b>, was deeply moved when the worlds worst nuclear disaster occurred at <b>Chernobyl</b> in <b>Ukraine in 1986</b>. An enthusiastic follower of the Campaign for Nuclear Disarmament, she was shocked and horrified by the consequences of the explosion so much so, that she eventually gave up her job to work full-time with the victims of the poisonous radioactive fallout.
+							</p>
+							<p class="flow-text text-justify">
+								The Greater Chernobyl Cause began as a <b>response to the world's worst nuclear disaster</b> but has now widened its mission to concentrate on the <b>human casualties</b> of the break-up of the former Soviet Union.Nowhere more so than in Kazakhstan where those who survived early life in a city orphanage faced the horrific prospect of being transferred hundreds of miles to a squalid and disease-ridden institution in Ayagus. For some, it amounted to a sentence of death.
+							</p>
+							<p class="flow-text text-justify">
+								Kazakhstan is the largest landlocked country in the world. The similarities with the Chernobyl disaster are startling. It was here that the Soviet Union exploded 500 nuclear weapons in a hand-picked test site over a period of 40 years.
+							</p>
+							<p class="flow-text text-justify">
+								The results of the charity’s efforts are equally startling – new and refurbished orphanages and hospices, vital domestic appliances and medical equipment that most of us take for granted, shelter for vulnerable street children and for some, even the possibility of adoption.
+							</p>
+							<p class="flow-text text-justify">
+								Under the overall management of a Board of Directors with Fiona Corcoran at the helm, the charity draws <b>volunteers</b> from every sector of <b>Irish life</b>, from the Cork Fire Brigade and local businesses to enthusiastic <b>schoolchildren</b>. However, such is the scale of the challenge that <b>the charity is always looking for new supporters</b>.
+							</p>
+
+
+							<hr>
+							
+							<amp-fit-text width="300" height="20" layout="responsive" max-font-size="52" class="title-of-page text-center-h">
+								Our Staff
+							</amp-fit-text>
+							
+							<ul class="collection with-header">
+								<li class="collection-header"><h4>Board of Directors</h4></li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">account_circle</i>
+									<span class="title">Patrick McGrath</span>
+									<p>Chairman<br>
+										 <a href="mailto:email@email.com">his-email@email.com</a><br>
+										 <a href="http://www.his-website.com" target="_blank">www.his-website.com</a>
+									</p>
+								</li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">account_circle</i>
+									<span class="title">Victor Shine</span>
+								</li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">account_circle</i>
+									<span class="title">Michael O’ Sullivan</span>
+								</li>
+							</ul>
+
+							<ul class="collection with-header">
+								<li class="collection-header"><h4>Charity Founders</h4></li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">account_circle</i>
+									<span class="title">Fiona Corcoran</span>
+								</li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">account_circle</i>
+									<span class="title">Patrick McGrath</span>
+								</li>
+							</ul>
+
+							<ul class="collection with-header">
+								<li class="collection-header"><h4>Film Production Team</h4></li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">account_circle</i>
+									<span class="title">Brian Staveley</span>
+								</li>
+							</ul>
+
+							<ul class="collection with-header">
+								<li class="collection-header"><h4>Producer/Director and Camera</h4></li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">account_circle</i>
+									<span class="title">Bill Hamilton</span>
+									<p>Presenter</p>
+								</li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">account_circle</i>
+									<span class="title">Jon Bagge</span>
+									<p>Film Editor</p>
+								</li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">account_circle</i>
+									<span class="title">Michael O’ Sullivan</span>
+								</li>
+							</ul>
+						</div>
+						
+						<div role="tab" class="tab-button tab" option="b">History</div>
+						<div role="tabpanel" class="tabContent">
+							<!-- TAB "History" CONTENT -->
+
+							<amp-fit-text width="300" height="20" layout="responsive" max-font-size="52" class="title-of-page text-center-h">
+								The Chernobyl Desaster
+							</amp-fit-text>
+
+							<amp-img src="./img/about-us/history.jpg" width="590" height="265" layout="responsive" class="image-center"></amp-img>
+						
+							<p class="flow-text text-justify">
+								The Chernobyl disaster began during a systems test on <b>26 April 1986</b> at reactor number four of the Chernobyl plant, which is near Pripyat and in proximity to the administrative border with Belarus and the Dnieper River. There was a sudden and unexpected power surge, and when an emergency shutdown was attempted, a much larger spike in power output occurred, which led to a reactor vessel rupture and a series of steam explosions. These events exposed the graphite moderator of the reactor to air, causing it to ignite. The resulting fire sent week long plumes of highly radioactive fallout into the atmosphere over an extensive geographical area, including Pripyat. The plumes drifted over large parts of the western Soviet Union and Europe. According to official post-Soviet data, about 60% of the fallout landed in Belarus.
+							</p>
+
+							<p class="flow-text text-justify">
+								36 hours after the accident Soviet officials enacted a 10-kilometre exclusion zone which resulted in the rapid evacuation of <b>49,000 people</b> and their animals, primarily from the largest population centre near the reactor, the town of Pripyat. Although not communicated at the time, an immediate evacuation of the town following the accident was not advisable as the road leading out of the town had heavy nuclear fallout "hotspots" deposited on it, while up to around that point, the town itself was comparatively safe due to the more favourable wind direction, permitting shelter in place to be the best safety measure to take for the town, before the winds began to change direction.
+							</p>
+
+							<p class="flow-text text-justify">
+								As the plumes and subsequent fallout continued to be generated, the evacuation zone was increased from <b>10 to 30 km</b> about one week after the accident, resulting in a further <b>68,000 people</b> evacuated, including from the town of Chernobyl itself. The surveying and detection of isolated fallout hotspots outside this zone over the following year eventually resulted in <b>135,000 "long-term evacuees"</b> in total, accepting to be moved.
+							</p>
+
+							<p class="flow-text text-justify">
+								The near tripling in the total number of permanently resettled to some <b>350,000 over the decades, 1986 to 2000</b>, from the most severely "contaminated" areas, is regarded as largely political in nature, with the majority of the rest evacuated in an effort to redeem loss in trust in the government, which was most common around 1990.
+							</p>
+
+							<p class="flow-text text-justify">
+								The accident raised the already heightened concerns about fission reactors worldwide, and while most concern was focused on those of the same unusual design, hundreds of disparate electric-power reactor proposals, including those under construction at Chernobyl, reactor No.5 and 6, were eventually cancelled. With the worldwide issue generally being due to the ballooning in costs for new nuclear reactor safety system standards and the legal costs in dealing with the increasingly hostile/anxious public opinion. There was a precipitous drop in the prior rate of new "startups", after 1986.
+							</p>
+							
+							<amp-vimeo data-videoid="140168449" layout="responsive" width="640" height="480" class="video-4x3"></amp-vimeo>
+						</div>
+						
+						<div role="tab" class="tab-button tab" option="c">What We Do</div>
+						<div role="tabpanel" class="tabContent">
+							<!-- TAB "What We Do" CONTENT -->
+
+							<amp-img src="./img/about-us/what-we-do.jpg" width="590" height="265" layout="responsive" class="image-center"></amp-img>
+							
+							<p class="flow-text text-justify">
+								The subsequent collapse of The Soviet Union saw Fiona Corcoran widened her efforts in Russia, Ukraine and Kazakhstan. These countries gained their independence but at an enormous cost in terms of financial and social support. The casualties of this poverty are abandoned children and desperate adults. While much of the world ignores their plight, the Greater Chernobyl Cause has risen to the challenge to provide help and hope for the future.
+							</p>
+
+							<p class="flow-text text-justify">
+								Kazakhstan, the size of Western Europe, presents the charity with its greatest challenge. As the only Irish charity operating in that region, the Greater Chernobyl Cause strives to bring hope and give life to the children of Kazakhstan.
+							</p>
+
+							<hr>
+						
+							<div class="space-around">
+								<div class="flex-item-cards flow-text">
+									<div class="text-center-h"><b>Humanitarian Aid</b></div>
+									<div class="text-justify">We send 40ft containers of Humanitarian Aid to Kazakhstan, Ukraine & Russia biannually. In addition, we operate a programme for overseas volunteers. Click here for more information on volunteering. By sending aid in sealed containers by sea we ensure that your donations reach those in dire need.</div>
+								</div>
+								
+								<div class="flex-item-cards flow-text">
+									<div class="text-center-h"><b>Building Programmes</b></div>
+									<div class="text-justify">We finance the construction and repair of Orphanages, Hospitals and Care Centres. We support regional economies by purchasing all building materials locally, and in turn, providing employment to the local workforce.</div>
+								</div>
+								
+								<div class="flex-item-cards flow-text">
+									<div class="text-center-h"><b>Medical / Care Programme</b></div>
+									<div class="text-justify">We are activley involved in Hospice work for the elderly. We provide overseas medical treatment for sick children and actively participate in the Barretstown Programme. Our Rescue and Rehabilitation programme provides families for homeless children enabling them to ultimately make a valuable contribution to society.</div>
+								</div>
+								
+								<div class="flex-item-cards flow-text">
+									<div class="text-center-h"><b>Education Programme</b></div>
+									<div class="text-justify">We run an education programme for schools and colleges in which we present the plight of the people of Kazakhstan and the Underground Children of Kiev, educating students about the wider world and the suffering that exists there. It incorporates a documentary showing about our work. Along with this we provide a photographic presentation, lecture and question and answer session. We also offer students the opportunity of gaining work experience at our offices and aid centre in Cork.</div>
+								</div>
+							</div>
+							
+							<hr>
+							
+							<amp-vimeo data-videoid="13529713" width="640" height="480" layout="responsive" class="video-4x3"></amp-vimeo>
+						</div>
+						
+						<div role="tab" class="tab-button tab" option="d">Partners</div>
+						<div role="tabpanel" class="tabContent">
+							<!-- TAB "Partners" CONTENT -->
+							
+							<div class="space-around">
+								<div class="flex-item-cards shadow">
+									<div>
+										<a href="http://www.government.kz/en/" target="_blank">
+											<amp-img src="img/about-us/partners-government-kazakhstan.png" width="600" height="300" layout="responsive" class="no-external-link-icon" alt=""></amp-img>
+										</a>
+									</div>
+									<div class="partner-content">
+										<a href="http://www.government.kz/en/" target="_blank" class="card-title flow-text">Government of Kazakhstan</a>
+										<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+									</div>
+								</div>
+								
+								<div class="flex-item-cards shadow">
+									<div>
+										<a href="http://www.kz.undp.org/" target="_blank">
+											<amp-img src="img/about-us/partners-undp-kazakhstan.png" width="600" height="300" layout="responsive" alt=""></amp-img>
+										</a>
+									</div>
+									<div class="partner-content">
+										<a href="http://www.kz.undp.org/" target="_blank" class="card-title flow-text">UNDP Kazakhstan</a>
+										<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+									</div>
+								</div>
+								
+								<div class="flex-item-cards shadow">
+									<div>
+										<a href="http://www.kmu.gov.ua/control/en" target="_blank">
+											<amp-img src="img/about-us/partners-government-ukraine.png" width="600" height="300" layout="responsive" alt=""></amp-img>
+										</a>
+									</div>
+									<div class="partner-content">
+										<a href="http://www.kmu.gov.ua/control/en" target="_blank" class="card-title flow-text">Government of Ukraine</a>
+										<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+									</div>
+								</div>
+								
+								<div class="flex-item-cards shadow">
+									<div>
+										<a href="http://famvin.org/en/" target="_blank">
+											<amp-img src="img/about-us/partners-vincentian-order-ukraine.png" width="600" height="300" layout="responsive" alt=""></amp-img>
+										</a>
+									</div>
+									<div class="partner-content">
+										<a href="http://famvin.org/en/" target="_blank" class="card-title flow-text">Vincentian Order Ukraine</a>
+										<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+									</div>
+								</div>
+								
+								<div class="flex-item-cards shadow">
+									<div>
+										<a href="http://www.otchiy-dim.org/en" target="_blank">
+											<amp-img src="img/about-us/partners-fathers-house-ukraine.png" width="600" height="300" layout="responsive" alt=""></amp-img>
+										</a>
+									</div>
+									<div class="partner-content">
+										<a href="http://www.otchiy-dim.org/en" target="_blank" class="card-title flow-text">Fathers House Ukraine</a>
+										<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+									</div>
+								</div>
+								
+								<div class="flex-item-cards shadow">
+									<div>
+										<a href="http://government.ru/en/" target="_blank">
+											<amp-img src="img/about-us/partners-government-russia.png" width="600" height="300" layout="responsive" alt=""></amp-img>
+										</a>
+									</div>
+									<div class="partner-content">
+										<a href="http://government.ru/en/" target="_blank" class="card-title flow-text">Government of  Russia</a>
+										<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</amp-selector>
+					
+					<!-- END OF MAIN CONTENT -->
+					
+				</div>
+			</div>
+		</main>
+	
+		
+		<footer class="page-footer red darken-3">
+		
+			<div class="container">
+				<div class="text-center-h">
+					<h5>THE GREATER CHERNOBYL CAUSE</h5>
+					
+					<p><a href="http://www.charitiesregulatoryauthority.ie/en/CRA/Charity/EFCAC86E349DB5028025800B003B2946" target="_blank">REGISTERED CHARITY 15314</a></p>
+				</div>
+				
+				<div class="flex-container-contacts">
+					<div class="flex-item-contact">
+						<h5>Contact the Charity</h5>
+						<ul>
+							<li>
+								<i class="material-icons tiny">phone</i>
+								<b> Phone: </b>
+								<a href="tel: +353 (021) 432 3276">+353 (021) 432 3276</a>
+							</li>
+							<li>
+								<amp-img src="icons/fax.png" width="14" height="14" alt=""></amp-img>
+								<b> Fax: </b>
+								<a href="+353 (021) 453 6792">+353 (021) 453 6792</a>
+							</li>
+							<li>
+								<i class="material-icons tiny">email</i>
+								<b> Email: </b>
+								<a href="mailto: info@greaterchernobylcause.ie">info@greaterchernobylcause.ie</a>
+							</li>
+							<li class="flex-container-social-media">
+								<a href="https://www.facebook.com/greaterchernobylcause.ie/" target="_blank" class="social-media-icon-shadow">
+									<amp-img src="icons/facebook.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="https://twitter.com/ChernobylCause" target="_blank" class="social-media-icon-shadow">
+									<amp-img src="icons/twitter.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="#!" class="social-media-icon-shadow" target="_blank">
+									<amp-img src="icons/instagram.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="#!" class="social-media-icon-shadow" target="_blank">
+									<amp-img src="icons/linkedin.png" width="60" height="60" alt=""></amp-img>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="flex-item-contact">
+						<h5>Contact Fiona Corcoran, CEO/Founder</h5>
+						<ul>
+							<li>
+								<i class="material-icons tiny">phone</i>
+								<b> Phone: </b>
+								<a href="tel: +353 (087) 953 6133">+353 (087) 953 6133</a>
+							</li>
+							<li>
+								<i class="material-icons tiny">email</i>
+								<b> Email: </b>
+								<a href="mailto: corcoranfiona@eircom.net">corcoranfiona@eircom.net</a>
+							</li>
+							<li class="flex-container-social-media">
+								<a href="https://www.facebook.com/fiona.corcoran.184" target="_blank" class="social-media-icon-shadow">
+									<amp-img src="icons/facebook.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="https://twitter.com/CorcoranFiona" target="_blank" class="social-media-icon-shadow">
+									<amp-img src="icons/twitter.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="#!" class="social-media-icon-shadow" target="_blank">
+									<amp-img src="icons/instagram.png" width="60" height="60" alt=""></amp-img>
+								</a>
+								<a href="https://www.linkedin.com/in/fiona-corcoran-5319ba10/?ppe=1" class="social-media-icon-shadow" target="_blank">
+									<amp-img src="icons/linkedin.png" width="60" height="60" alt=""></amp-img>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="text-center-h">
+					<h5><i class="material-icons">location_on</i>Location</h5>
+					
+					<p><a href="https://www.google.ie/maps?q=the+greater+chernobyl+cause&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiN8MeducLTAhVKJcAKHeDmBikQ_AUICygE" target="_blank">
+						Unit 4, Southside Industrial Estate, Pouladuff Road, Togher, Cork, T12 AW08, Ireland
+					</a></p>
+				</div>
+				
+			</div>
+			
+			<div class="footer-copyright">
+				<div class="container">
+					<p class="flow-text text-center-h text-italic">
+						Every child deserves a childhood, every adult a healthy life.
+					</p>
+				</div>
+			</div>
+			
+		</footer>
+  	</body>
+</html>

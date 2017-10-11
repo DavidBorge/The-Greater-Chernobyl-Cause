@@ -1,7 +1,7 @@
 <amp-sidebar id="sidebar" layout="nodisplay" side="left">
 	<ul id="side-nav" class="side-nav">
 		<li>
-			<amp-img src="img/sidenav/logo-two-lines.png" width="320" height="107" layout="responsive" alt="The Greater Chernobyl Cause"></amp-img>
+			<amp-img src="http://www.greaterchernobylcause.ie/images/logo-two-lines.png" width="320" height="107" layout="responsive" alt="The Greater Chernobyl Cause"></amp-img>
 		</li>
 		<li>
 			<a id="donate-now-sidenav" class="waves-effect waves-light btn-large yellow darken-3 bolder">  <!-- alternative: pulse  -->
@@ -29,7 +29,7 @@
 		</li>
 		<li>
 			<a href="how-you-can-help.php">
-				<amp-img src="icons/hands.png" width="24" height="24" alt="" class="sidebar-icon"></amp-img>
+				<amp-img src="http://www.greaterchernobylcause.ie/images/hands.png" width="24" height="24" alt="" class="sidebar-icon"></amp-img>
 				How You Can Help
 			</a>
 		</li>
@@ -63,7 +63,7 @@
 		</li>
 		<li>
 			<a href="+353 (021) 453 6792">
-				<amp-img src="icons/fax-black.png" width="24" height="24" alt="" class="sidebar-icon"></amp-img>
+				<amp-img src="http://www.greaterchernobylcause.ie/images/fax-black.png" width="24" height="24" alt="" class="sidebar-icon"></amp-img>
 				+353 (021) 453 6792
 			</a>
 		</li>

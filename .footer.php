@@ -22,7 +22,7 @@
 								<a href="tel: +353 (021) 432 3276" class="text-white">+353 (021) 432 3276</a>
 							</li>
 							<li>
-								<amp-img src="icons/fax.png" width="14" height="14" alt=""></amp-img>
+								<amp-img src="http://www.greaterchernobylcause.ie/images/fax.png" width="14" height="14" alt=""></amp-img>
 								<b> Fax: </b>
 								<a href="+353 (021) 453 6792" class="text-white">+353 (021) 453 6792</a>
 							</li>
@@ -33,16 +33,16 @@
 							</li>
 							<li class="flex-container-social-media">
 								<a href="https://www.facebook.com/greaterchernobylcause.ie/" target="_blank" class="social-media-icon-shadow">
-									<amp-img src="icons/facebook.png" width="60" height="60" alt=""></amp-img>
+									<amp-img src="http://www.greaterchernobylcause.ie/images/facebook.png" width="60" height="60" alt=""></amp-img>
 								</a>
 								<a href="https://twitter.com/ChernobylCause" target="_blank" class="social-media-icon-shadow">
-									<amp-img src="icons/twitter.png" width="60" height="60" alt=""></amp-img>
+									<amp-img src="http://www.greaterchernobylcause.ie/images/twitter.png" width="60" height="60" alt=""></amp-img>
 								</a>
 								<a href="#!" class="social-media-icon-shadow" target="_blank">
-									<amp-img src="icons/instagram.png" width="60" height="60" alt=""></amp-img>
+									<amp-img src="http://www.greaterchernobylcause.ie/images/instagram.png" width="60" height="60" alt=""></amp-img>
 								</a>
 								<a href="#!" class="social-media-icon-shadow" target="_blank">
-									<amp-img src="icons/linkedin.png" width="60" height="60" alt=""></amp-img>
+									<amp-img src="http://www.greaterchernobylcause.ie/images/linkedin.png" width="60" height="60" alt=""></amp-img>
 								</a>
 							</li>
 						</ul>
@@ -63,16 +63,16 @@
 							</li>
 							<li class="flex-container-social-media">
 								<a href="https://www.facebook.com/fiona.corcoran.184" target="_blank" class="social-media-icon-shadow">
-									<amp-img src="icons/facebook.png" width="60" height="60" alt=""></amp-img>
+									<amp-img src="http://www.greaterchernobylcause.ie/images/facebook.png" width="60" height="60" alt=""></amp-img>
 								</a>
 								<a href="https://twitter.com/CorcoranFiona" target="_blank" class="social-media-icon-shadow">
-									<amp-img src="icons/twitter.png" width="60" height="60" alt=""></amp-img>
+									<amp-img src="http://www.greaterchernobylcause.ie/images/twitter.png" width="60" height="60" alt=""></amp-img>
 								</a>
-								<a href="#!" class="social-media-icon-shadow" target="_blank">
-									<amp-img src="icons/instagram.png" width="60" height="60" alt=""></amp-img>
+								<a href="#" class="social-media-icon-shadow" target="_blank">
+									<amp-img src="http://www.greaterchernobylcause.ie/images/instagram.png" width="60" height="60" alt=""></amp-img>
 								</a>
 								<a href="https://www.linkedin.com/in/fiona-corcoran-5319ba10/?ppe=1" class="social-media-icon-shadow" target="_blank">
-									<amp-img src="icons/linkedin.png" width="60" height="60" alt=""></amp-img>
+									<amp-img src="http://www.greaterchernobylcause.ie/images/linkedin.png" width="60" height="60" alt=""></amp-img>
 								</a>
 							</li>
 						</ul>

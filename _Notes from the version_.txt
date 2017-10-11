@@ -1,6 +1,0 @@
-	— THE GREATER CHERNOBYL CAUSE V3.3 —
-
-This version just has minor CSS changes for the footer.
-Also, the clean and minified CSS. (No longer Materialize CSS linked).
-
-This is the first version I uploaded to the CMS.

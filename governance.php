@@ -1,11 +1,13 @@
 <?php include '.head.php';?>
 
 <!-- Navigation Bar -->
-<?php include '.top_nav.php';?>
+<?php include '.top_nav_governance_active.php';?>
 
 <!-- AMP Sidebar -->
 <?php include '.side_bar.php';?>
 
+<!-- Share floating button -->
+<?php include '.share-floating-button.php';?>
 
 
 <!-- MAIN CONTENT -->

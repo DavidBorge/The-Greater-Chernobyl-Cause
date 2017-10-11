@@ -3,36 +3,37 @@
 	<head>
 		<meta charset="utf-8">
 	    
-	    <script async src="https://cdn.ampproject.org/v0.js"></script>
-	    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-	    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
-	    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-	    <script async custom-element="amp-vimeo" src="https://cdn.ampproject.org/v0/amp-vimeo-0.1.js"></script>
-	    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
-	    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-			<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+		<script async src="https://cdn.ampproject.org/v0.js"></script>
+		<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+		<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+		<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+		<script async custom-element="amp-vimeo" src="https://cdn.ampproject.org/v0/amp-vimeo-0.1.js"></script>
+		<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+		<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+		<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 
-	    <title>The Greater Chernobyl Cause</title>
-	    
-	    <link rel="canonical" href="http://www.greaterchernobylcause.ie/" />
-	    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-	    <script type="application/ld+json">
-	      {
-	        "@context": "http://schema.org",
-	        "@type": "NewsArticle",
-	        "headline": "Open-source framework for publishing content",
-	        "datePublished": "2015-10-07T12:02:41Z",
-	        "image": [
-	          "logo.jpg"
-	        ]
-	      }
-	    </script>
-	    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-			
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	    
-	    <style amp-custom>
+		<title>The Greater Chernobyl Cause</title>
+
+		<link rel="canonical" href="http://www.greaterchernobylcause.ie/" />
+		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "NewsArticle",
+				"headline": "Open-source framework for publishing content",
+				"datePublished": "2015-10-07T12:02:41Z",
+				"image": [
+					"logo.jpg"
+				]
+			}
+		</script>
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="_css_/materialize.css">
+
+		<style amp-custom>
 			/*****---- STYLES SHARED BY ALL PAGES ----****/
 
 			/**** Min-width of the page ****/
@@ -154,6 +155,10 @@
 			}*/
 			
 			/**** Nav bar ****/
+			nav ul li.active {
+				background-color: rgba(0, 0, 0, 0.1);
+			}
+			
 			/*Cancel the nav-extended class for the <nav> (I use the #id because it has more priority)*/
 			@media only screen and (min-width: 1240px) {
 				#nav {
@@ -586,6 +591,11 @@
 					margin: 10px 0 10px 0;
 				}
 			}
+				
+				.partner-description {
+					border-top: 1px solid rgba(160,160,160,0.2);
+					padding-top: 12px;
+				}
 
 
 			/*****---- STYLES OF THE MAIN CONTENT OF PROJECTS.HTML ----****/
@@ -905,12 +915,34 @@
 
 
 			/*****---- STYLES OF THE MAIN CONTENT OF IN-THE-NEWS.HTML (HOME) ----****/
-			
+			#news-archive-button {
+				background-color: #335ea9;
+				
+				padding-left: 10px;
+				padding-right: 10px;
+				
+				margin-left: 10px;
+			}
+				
+			#news-archive-button-2 {
+				background-color: #335ea9;
+				
+				padding-left: 10px;
+				padding-right: 10px;
+				
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+				
 			/**** Cards with the individual projects****/
 			.float-left {
 				float: left;
 			}
-
+				
+			.clear-both {
+				clear: both;
+			}
+			
 			.project-card {
 				margin-top: 10px;
 				margin-bottom: 20px;
@@ -1013,6 +1045,6 @@
 		 * Demo: http://amsul.github.io/pickadate.js
 		 */
 		</style>
-    </head>
+	</head>
 
-    <body>
+	<body>

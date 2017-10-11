@@ -3289,7 +3289,8 @@ small {
   border-radius: 2px; }
   .card .card-title {
     font-size: 24px;
-    font-weight: 300; }
+    font-weight: 300;
+		border-bottom: 1px solid rgba(160,160,160,0.2);}	
     .card .card-title.activator {
       cursor: pointer; }
   .card.small, .card.medium, .card.large {

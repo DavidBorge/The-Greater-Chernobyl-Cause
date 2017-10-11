@@ -10,6 +10,7 @@
 	    <script async custom-element="amp-vimeo" src="https://cdn.ampproject.org/v0/amp-vimeo-0.1.js"></script>
 	    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
 	    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+			<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 
 	    <title>The Greater Chernobyl Cause</title>
 	    
@@ -68,16 +69,127 @@
 			.vertical-align {
 				vertical-align: middle;
 			}
+			
+			.vertical-align-text-bottom {
+				vertical-align: text-bottom;
+			}
+			
+			.vertical-align-super {
+				vertical-align: super;
+			}
 
 			.text-white {
 				color: white;
 			}
 			
-			/**** Nav bar: Cancel the nav-extended class for the <nav> (I use the #id because it has more priority) ****/
+			/**** List ****/
+			.disc {
+				list-style-type: disc;
+			}
+				
+			/**** Floating share button (applies the property to #share-list) ****/
+			#share-list {
+				position: fixed;
+				right: 27px;
+				bottom: 80px;
+				z-index: 998;
+				
+				background-color: white;
+				padding: 5px;
+				border-radius: 10px;
+				
+				/*transition: display 0.5s, opacity 0.5s linear;*/
+			}
+			
+			.share-list-icon {
+				border-radius: 50%;
+			}
+			
+			#share-button:hover ~ #share-list {
+				display: inline;
+				color: green;
+			}
+			
+			#share-button:focus ~ #share-list {
+				display: inline;
+				color: green;
+			}
+			
+			#share-button:active ~ #share-list {
+				display: inline;
+				color: green;
+			}
+			
+			#share-list:hover {
+				display: inline;
+			}
+			
+			#share-list:focus {
+				display: inline;
+			}
+			
+			#share-list:active {
+				display: inline;
+			}
+			
+				
+			/**** Test button that works ****/
+			/*.btn2 {
+				background-color: #4285f4;
+			}
+
+			.btn2:hover {
+				background-color: #296CDB;
+			}
+
+			.btn2:focus {
+				background-color: #0F52C1;
+
+				/* The outline parameter surpresses the border
+				color / outline when focused */
+				/*outline: 0;
+			}
+
+			.btn2:active {
+				background-color: #0039A8;
+			}*/
+			
+			/**** Nav bar ****/
+			/*Cancel the nav-extended class for the <nav> (I use the #id because it has more priority)*/
 			@media only screen and (min-width: 1240px) {
 				#nav {
 					height: auto;
 				}
+			}
+				
+			/*Fix mav bar on mobile*/
+			@media only screen and (max-width: 1239px) {
+				#nav {
+					position: sticky;
+					height: 56px;
+					z-index: 997; 
+				}
+			}
+			
+			.links-navigation-bar {
+				display: -webkit-flex;
+				display: flex;
+
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+				
+				width: 100%;
+			}
+			
+			.flex-item-nav-bar {
+				/*Every item ocuppies the same horizontal space*/
+				flex: 1;
+				
+				/*The text does not jump to the next line*/
+				white-space: nowrap;
+				
+				/*Horizontal alignment*/
+    		text-align: center;
 			}
 			
 			/**** Hamburguer menu (amp-sidebar) ****/
@@ -102,8 +214,8 @@
 			}
 
 			.sidebar-icon {
-		   		vertical-align: middle;
-    			margin-right: 29px;
+				vertical-align: middle;
+				margin-right: 29px;
 			}
 
 			/*.side-nav materialize class has been edited*/
@@ -834,6 +946,64 @@
 				
 				/*Espace before and after*/
 				margin-bottom: 25px;
+			}
+			
+			.max-width-1000 {
+				max-width: 1000px;
+			}
+			
+			.max-width-311 {
+				max-width: 311px;
+			}
+			
+				
+			/*****---- STYLES OF THE MAIN CONTENT OF GOVERNANCE.HTML (HOME) ----****/
+			/**** Cards with the individual pieces of information ****/
+			.governance-card {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				padding: 10px;
+				border-radius: 5px 5px 5px 5px;
+			}
+			
+			.width-100 {
+				width: 100%;
+			}
+			
+			.space-between {
+				display: -webkit-flex;
+				display: flex;
+				
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+			}
+				
+			.flex-item-list {
+				flex: 1;
+
+				/*Prevent the text from touching*/
+				margin: 10px 20px 10px 20px;
+
+				/*Prevent the text from being to narrow or too wide*/
+				min-width: 150px;
+				max-width: 590px;
+			}
+				
+			.letter {
+				margin-top: 15px;
+			}
+				
+			.video-card {
+				max-width: 640px;
+				
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 20px;
+				
+				border-radius: 5px 5px 5px 5px;
 			}
 			
 			/**** Materialize CSS (compressed and purified) ****/

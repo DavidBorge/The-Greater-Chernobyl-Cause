@@ -6,10 +6,12 @@
 <!-- AMP Sidebar -->
 <?php include '.side_bar.php';?>
 
+<!-- Share floating button -->
+<?php include '.share-floating-button.php';?>
+
 
 
 <!-- MAIN CONTENT -->
-
 <amp-fit-text width="300" height="50" layout="responsive" max-font-size="52" class="title-of-page text-center-h">
 	Working to save and improve lives in the former Soviet Union.
 </amp-fit-text>
@@ -83,6 +85,14 @@
 	</div>
 
 </div>
+
+<!-- Facebook Feed
+<amp-iframe width="500" height="500"
+    sandbox="allow-scripts allow-same-origin"
+    frameborder="0"
+    scrolling="no"
+    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgreaterchernobylcause.ie%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId">
+</amp-iframe> -->
 
 <!-- END OF MAIN CONTENT -->
 

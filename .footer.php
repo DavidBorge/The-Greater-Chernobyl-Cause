@@ -80,7 +80,7 @@
 				</div>
 
 				<div class="text-center-h">
-					<h5><i class="material-icons">location_on</i>Location</h5>
+					<h5><i class="material-icons vertical-align-text-bottom">location_on</i>Location</h5>
 					
 					<p><a href="https://www.google.ie/maps?q=the+greater+chernobyl+cause&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiN8MeducLTAhVKJcAKHeDmBikQ_AUICygE" target="_blank">
 						Unit 4, Southside Industrial Estate, Pouladuff Road, Togher, Cork, T12 AW08, Ireland

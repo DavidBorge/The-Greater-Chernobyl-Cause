@@ -1,4 +1,4 @@
-	— THE GREATER CHERNOBYL CAUSE V3.1 —
+	— THE GREATER CHERNOBYL CAUSE V3.2 —
 
-This version added some news articles and has the old text content of the
-"Semipalatinsk Hospice Kazakhstan" and "Ivanskoye, Russia" projects.
+This version added the Fundraising and Volunteering tabs in the How You Can Help section, as well as the Governance section.
+The Nationwide Plea for Help button has been removed.

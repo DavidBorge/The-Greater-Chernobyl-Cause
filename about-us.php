@@ -194,7 +194,7 @@
 				</div>
 				<div class="partner-content">
 					<a href="http://www.government.kz/en/" target="_blank" class="card-title flow-text">Government of Kazakhstan</a>
-					<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+					<!--<p class="flow-text">[Here we describe our collaboration with the organization...]</p>-->
 				</div>
 			</div>
 			
@@ -206,7 +206,7 @@
 				</div>
 				<div class="partner-content">
 					<a href="http://www.kz.undp.org/" target="_blank" class="card-title flow-text">UNDP Kazakhstan</a>
-					<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+					<!--<p class="flow-text">[Here we describe our collaboration with the organization...]</p>-->
 				</div>
 			</div>
 			
@@ -218,7 +218,7 @@
 				</div>
 				<div class="partner-content">
 					<a href="http://www.kmu.gov.ua/control/en" target="_blank" class="card-title flow-text">Government of Ukraine</a>
-					<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+					<!--<p class="flow-text">[Here we describe our collaboration with the organization...]</p>-->
 				</div>
 			</div>
 			
@@ -230,7 +230,7 @@
 				</div>
 				<div class="partner-content">
 					<a href="http://famvin.org/en/" target="_blank" class="card-title flow-text">Vincentian Order Ukraine</a>
-					<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+					<!--<p class="flow-text">[Here we describe our collaboration with the organization...]</p>-->
 				</div>
 			</div>
 			
@@ -242,7 +242,7 @@
 				</div>
 				<div class="partner-content">
 					<a href="http://www.otchiy-dim.org/en" target="_blank" class="card-title flow-text">Fathers House Ukraine</a>
-					<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+					<!--<p class="flow-text">[Here we describe our collaboration with the organization...]</p>-->
 				</div>
 			</div>
 			
@@ -254,7 +254,7 @@
 				</div>
 				<div class="partner-content">
 					<a href="http://government.ru/en/" target="_blank" class="card-title flow-text">Government of  Russia</a>
-					<p class="flow-text">[Here we describe our collaboration with the organization...]</p>
+					<!--<p class="flow-text">[Here we describe our collaboration with the organization...]</p>-->
 				</div>
 			</div>
 		</div>

@@ -45,6 +45,13 @@
 				Contact Us
 			</a>
 		</li>
+		<li>
+			<a href="governance.php">
+				<i class="material-icons">account_balance</i>
+				Governance
+			</a>
+		</li>
+		
 		<hr>
 		
 		<p class="text-bold">Contact the Charity</p>
